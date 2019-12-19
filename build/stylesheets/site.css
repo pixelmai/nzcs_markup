@@ -765,6 +765,12 @@ ul.no_list {
         display: block;
         width: 230px;
         height: 65px; }
+  #contact.snap_section {
+    height: auto !important; }
+    #contact.snap_section .bg_image {
+      height: auto !important; }
+    #contact.snap_section .text_section {
+      height: auto !important; }
   /* ROCKET */
   #rocket .bg_image .rocket_svg {
     width: 20%;
