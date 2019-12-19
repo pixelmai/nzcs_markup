@@ -160,16 +160,17 @@ footer {
           footer .grid-container ul li a.sm_links:hover .sm_icon {
             opacity: 1; }
 
-body.snap_body #contact .text_section footer {
-  background: transparent; }
-  body.snap_body #contact .text_section footer .grid-container {
+body.snap_body #contact .text_section footer, body.snap_body #the_team .text_section footer {
+  background: transparent;
+  padding: 0 20px 20px 20px; }
+  body.snap_body #contact .text_section footer .grid-container, body.snap_body #the_team .text_section footer .grid-container {
     margin: 40px 0 0;
     font-size: 1em;
     padding-bottom: 0; }
-    body.snap_body #contact .text_section footer .grid-container p {
-      font-size: 1em;
+    body.snap_body #contact .text_section footer .grid-container p, body.snap_body #the_team .text_section footer .grid-container p {
+      font-size: .9em;
       margin-bottom: 0;
-      padding-bottom: 20px; }
+      padding-bottom: 10px; }
 
 /* FOOTER */
 /* HOMEPAGE */
@@ -505,7 +506,7 @@ h2 {
     right: 40%; }
   #contact .text_section h2 {
     text-align: center;
-    margin-bottom: 40px; }
+    margin: 100px 0 40px; }
   #contact .text_section p {
     font-size: 1.3em;
     margin-bottom: 20px; }
@@ -684,6 +685,41 @@ h2 {
       width: 67%;
       margin-bottom: 20px; }
 
+#the_team {
+  background: #ebfdff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ebfdff), to(#efffc7));
+  background: linear-gradient(0deg, #ebfdff 0%, #efffc7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ebfdff",endColorstr="#efffc7",GradientType=1); }
+  #the_team .bg_image {
+    align-items: flex-start; }
+    #the_team .bg_image .svg_container {
+      display: block;
+      width: 100%;
+      margin: 0;
+      line-height: 0; }
+  #the_team h2 {
+    padding-top: 100px; }
+  #the_team .text_section p {
+    font-size: 1em;
+    margin-bottom: 0;
+    text-align: left;
+    padding: 0; }
+  #the_team .text_section .team_info {
+    padding: 0 0 10px;
+    text-align: center; }
+    #the_team .text_section .team_info img {
+      width: 65%;
+      height: auto;
+      border-radius: 50%; }
+    #the_team .text_section .team_info strong, #the_team .text_section .team_info em {
+      display: block; }
+    #the_team .text_section .team_info strong {
+      font-size: 1.4em;
+      padding-top: 10px; }
+    #the_team .text_section .team_info em {
+      font-style: normal;
+      color: #0b83a5; }
+
 /* ABOUT PAGE */
 /* SOME REUSABLE STUFF */
 .text_center {
@@ -767,8 +803,6 @@ ul.no_list {
     padding-top: 40px;
     position: relative;
     font-size: .9em; }
-    #contact footer {
-      padding: 0 20px 20px 20px; }
   /* CONTACT */
   /* ABOUT PAGE */
   #about_hero {
@@ -810,6 +844,9 @@ ul.no_list {
       position: absolute;
       display: block;
       height: auto; }
+  #the_team {
+    margin: 0;
+    padding: 0; }
   /* ABOUT PAGE */ }
 
 @media screen and (max-width: 1023px) {
@@ -861,12 +898,14 @@ ul.no_list {
       margin-bottom: 10px; }
   footer .grid-container .copy_sm svg {
     margin-left: 15px; }
-  body.snap_body #contact .text_section footer {
+  body.snap_body #contact .text_section footer, body.snap_body #the_team .text_section footer {
     padding-bottom: 20px; }
-    body.snap_body #contact .text_section footer .grid-container {
+    body.snap_body #contact .text_section footer .grid-container, body.snap_body #the_team .text_section footer .grid-container {
       margin: 40px 0 0;
       font-size: 1.4em;
       padding-bottom: 0; }
+      body.snap_body #contact .text_section footer .grid-container p, body.snap_body #the_team .text_section footer .grid-container p {
+        padding: 10px 15px; }
   /* FOOTER */
   /* HOMEPAGE */
   /* HERO TEASER */
@@ -1045,6 +1084,24 @@ ul.no_list {
         border-radius: 0; }
   .button {
     font-size: 1.7em; }
+  /* FOOTER */
+  footer .grid-container ul {
+    font-size: .8em; }
+  footer .grid-container p strong {
+    font-size: 1.1em; }
+  footer .grid-container .copy_sm {
+    padding-bottom: 40px; }
+    footer .grid-container .copy_sm svg {
+      margin-left: 15px; }
+  body.snap_body #contact .text_section footer, body.snap_body #the_team .text_section footer {
+    padding-bottom: 20px; }
+    body.snap_body #contact .text_section footer .grid-container, body.snap_body #the_team .text_section footer .grid-container {
+      margin: 40px 0 0;
+      font-size: 1.4em;
+      padding-bottom: 0; }
+      body.snap_body #contact .text_section footer .grid-container p, body.snap_body #the_team .text_section footer .grid-container p {
+        padding: 10px 15px; }
+  /* FOOTER */
   /* HOMEPAGE */
   /* HERO TEASER */
   #hero .bg_image .svg_container {

@@ -80,7 +80,6 @@
     display: block; }
     #why_us .bg_image .svg_container {
       display: none; }
-  /* HOMEPAGE */
   /* TESTIMONIALS */
   #testimonials .bg_image {
     background-image: url("../images/homepage/bg_testimonials.svg");
@@ -103,6 +102,27 @@
       height: 50%;
       right: 40%;
       top: 30%; }
-  /* CONTACT */ }
+  /* CONTACT */
+  /* HOMEPAGE */
+  /* ABOUT US */
+  /* CONTACT */
+  #core_values .bg_image {
+    display: none; }
+    #core_values .bg_image .svg_container {
+      display: none; }
+  #core_values .values_svg {
+    width: 50%;
+    height: 50%; }
+  /* CONTACT */
+  /* TEAM */
+  #the_team .bg_image {
+    background-image: url("../images/about_page/bgc_white_about2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center; }
+    #the_team .bg_image .svg_container {
+      display: none; }
+  /* TEAM */
+  /* ABOUT US */ }
 
 /*FOR EDGE */
