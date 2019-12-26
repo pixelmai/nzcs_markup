@@ -116,13 +116,14 @@
   /* CONTACT */
   /* TEAM */
   #the_team .bg_image {
-    background-image: url("../images/about_page/bgc_white_about2.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top center; }
+    display: none; }
     #the_team .bg_image .svg_container {
       display: none; }
   /* TEAM */
-  /* ABOUT US */ }
+  /* ABOUT US */
+  #services_list .text_section .service_item .svg_icon .icon_cont {
+    display: block;
+    width: 100%;
+    height: 100%; } }
 
 /*FOR EDGE */

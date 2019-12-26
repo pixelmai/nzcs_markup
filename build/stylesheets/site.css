@@ -6,7 +6,8 @@ body {
   background: #fff;
   font-size: 1em;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font-family: "Source Sans Pro", "Open Sans", Helvetica, Arial, sans-serif; }
   body a {
@@ -173,7 +174,7 @@ body.snap_body #contact .text_section footer, body.snap_body #the_team .text_sec
       padding-bottom: 10px; }
 
 /* FOOTER */
-/* HOMEPAGE */
+/* SNAP SETTINGS */
 body.snap_body {
   height: 100vh;
   overflow: hidden; }
@@ -213,9 +214,10 @@ body.snap_body {
       height: 100vh;
       width: 100%; }
       .snap_container .snap_section .text_section p {
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         font-size: 1.1em;
-        text-align: left; }
+        text-align: left;
+        line-height: 1.8em; }
 
 h2 {
   color: #111;
@@ -228,6 +230,8 @@ h2 {
     color: #e3610b;
     font-weight: 600; }
 
+/* SNAP SETTINGS */
+/* HOMEPAGE */
 /* HERO TEASER */
 #hero {
   background: white;
@@ -245,13 +249,16 @@ h2 {
     #hero .text_section h1 {
       color: #444;
       font-size: 3.4em;
-      font-weight: 300; }
+      font-weight: 300;
+      line-height: 1.2em;
+      margin-bottom: 20px; }
       #hero .text_section h1 strong {
         color: #111;
         font-weight: 600; }
     #hero .text_section p {
       font-size: 1.3em;
-      text-align: center; }
+      text-align: center;
+      line-height: 1.8em; }
 
 /* HERO TEASER */
 /* ROCKET */
@@ -599,11 +606,13 @@ h2 {
     #about_hero .text_section h1 {
       color: #ffeb63;
       font-size: 5em;
-      text-shadow: 2px 2px 0px #15221d; }
+      text-shadow: 2px 2px 0px #15221d;
+      font-weight: 600; }
     #about_hero .text_section p {
       font-size: 1.4em;
       margin-bottom: 40px;
-      text-align: center; }
+      text-align: center;
+      line-height: 1.8em; }
     #about_hero .text_section a.circle_arrow_down {
       display: block;
       width: 100px;
@@ -708,8 +717,9 @@ h2 {
     padding: 0 0 10px;
     text-align: center; }
     #the_team .text_section .team_info img {
-      width: 65%;
+      width: 63%;
       height: auto;
+      border: 10px solid #fff;
       border-radius: 50%; }
     #the_team .text_section .team_info strong, #the_team .text_section .team_info em {
       display: block; }
@@ -721,6 +731,125 @@ h2 {
       color: #0b83a5; }
 
 /* ABOUT PAGE */
+/* NORMAL PAGE SETTINGS */
+.norm_container {
+  margin-top: -134px; }
+  .norm_container .norm_section {
+    position: relative;
+    overflow: hidden;
+    width: 100%; }
+    .norm_container .norm_section .text_cont_for_ie {
+      display: block;
+      margin: 0 auto; }
+    .norm_container .norm_section .bg_image {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center; }
+    .norm_container .norm_section .text_section {
+      z-index: 2;
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%; }
+      .norm_container .norm_section .text_section p {
+        padding-bottom: 30px;
+        font-size: 1.1em;
+        text-align: left;
+        line-height: 1.8em; }
+
+/* NORMAL PAGE SETTINGS */
+/* SERVICES PAGE */
+#services_container {
+  background: #ebfdfe;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ebfdfe), color-stop(63%, #f1e9cb));
+  background: linear-gradient(0deg, #ebfdfe 0%, #f1e9cb 63%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ebfdfe",endColorstr="#f1e9cb",GradientType=1); }
+  #services_container #services_hero {
+    overflow: hidden;
+    height: 800px;
+    display: block; }
+    #services_container #services_hero .bg_image {
+      background-image: url("../images/services_page/services_hero.jpg");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-items: center; }
+
+#services_list {
+  display: block;
+  margin-top: -500px;
+  padding-bottom: 30px; }
+  #services_list .text_section {
+    text-align: center;
+    display: block; }
+    #services_list .text_section h1 {
+      color: #e3610b;
+      font-size: 5em;
+      text-shadow: 2px 2px 0px #3d6970;
+      font-weight: 600;
+      display: block; }
+    #services_list .text_section h2 {
+      font-size: 2.2em;
+      margin-bottom: 40px;
+      display: block; }
+    #services_list .text_section p {
+      font-size: 1.4em;
+      text-align: center;
+      display: block; }
+      #services_list .text_section p strong {
+        font-size: 1.1em; }
+    #services_list .text_section .cell {
+      margin-bottom: 30px; }
+    #services_list .text_section .service_item {
+      background: #fff;
+      padding: 20px;
+      font-size: .8em;
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+      height: 100%;
+      color: #000;
+      border: 1px solid #fff; }
+      #services_list .text_section .service_item:hover {
+        background: #ffffec; }
+      #services_list .text_section .service_item .svg_icon {
+        width: 180px;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; }
+        #services_list .text_section .service_item .svg_icon svg {
+          margin: 0 auto; }
+        #services_list .text_section .service_item .svg_icon .flat_rate svg {
+          width: 50%; }
+        #services_list .text_section .service_item .svg_icon .phone_voip svg {
+          width: 90%; }
+        #services_list .text_section .service_item .svg_icon .cybersecurity svg {
+          width: 60%; }
+        #services_list .text_section .service_item .svg_icon .online_backup svg {
+          width: 70%; }
+        #services_list .text_section .service_item .svg_icon .domains_hosting svg {
+          width: 100%; }
+        #services_list .text_section .service_item .svg_icon .cloud_services svg {
+          width: 80%; }
+        #services_list .text_section .service_item .svg_icon .hardware_software svg {
+          width: 90%; }
+        #services_list .text_section .service_item .svg_icon .internet svg {
+          width: 85%; }
+        #services_list .text_section .service_item .svg_icon .network_design svg {
+          width: 100%; }
+      #services_list .text_section .service_item h3 {
+        color: #e36d1e; }
+      #services_list .text_section .service_item p {
+        font-size: 1.3em;
+        margin: 0;
+        padding-bottom: 10px; }
+
+/* SERVICES PAGE */
 /* SOME REUSABLE STUFF */
 .text_center {
   text-align: center; }
@@ -854,6 +983,11 @@ ul.no_list {
     margin: 0;
     padding: 0; }
   /* ABOUT PAGE */ }
+
+@media screen and (min-width: 1024px) {
+  #services_list .text_section .services_row .grid-x .cell:nth-child(-n+3) .service_item {
+    -webkit-box-shadow: 0px -7px 0px 0px rgba(102, 102, 102, 0.19);
+    box-shadow: 0px -7px 0px 0px rgba(102, 102, 102, 0.19); } }
 
 @media screen and (max-width: 1023px) {
   .snap_container {
@@ -1060,7 +1194,31 @@ ul.no_list {
       #contact .text_section .contact_form {
         margin-top: 40px; }
   /* CONTACT */
-  /* HOMEPAGE */ }
+  /* HOMEPAGE */
+  /* SERVICES PAGE */
+  #services_list .text_section {
+    font-size: 1em; }
+    #services_list .text_section h1 {
+      font-size: 3.7em; }
+    #services_list .text_section h2 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      display: block; }
+      #services_list .text_section h2 strong {
+        color: #000; }
+    #services_list .text_section h3 {
+      font-size: 2.5em; }
+    #services_list .text_section p {
+      font-size: 1.3em;
+      text-align: center;
+      display: block;
+      margin: 0 20px; }
+      #services_list .text_section p strong {
+        font-size: 1.1em; }
+    #services_list .text_section .services_row .grid-x .cell:nth-child(-n+2) .service_item {
+      -webkit-box-shadow: 0px -7px 0px 0px rgba(102, 102, 102, 0.19);
+      box-shadow: 0px -7px 0px 0px rgba(102, 102, 102, 0.19); }
+  /* SERVICES PAGE */ }
 
 @media screen and (max-width: 767px) {
   #main_navigation .menu {
@@ -1215,4 +1373,33 @@ ul.no_list {
     width: 67%;
     margin: 0 auto;
     margin-bottom: 20px; }
-  /* ABOUT PAGE */ }
+  /* ABOUT PAGE */
+  /* SERVICES PAGE */
+  #services_list .text_section {
+    font-size: .9em; }
+    #services_list .text_section h1 {
+      font-size: 3.7em; }
+    #services_list .text_section h2 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      display: block; }
+      #services_list .text_section h2 strong {
+        color: #000; }
+    #services_list .text_section h3 {
+      font-size: 2.5em; }
+    #services_list .text_section p {
+      font-size: 1.3em;
+      text-align: center;
+      display: block;
+      margin: 0 20px; }
+      #services_list .text_section p strong {
+        font-size: 1.1em; }
+  /* SERVICES PAGE */ }
+
+@media screen and (max-height: 768px) {
+  #contact.snap_section, #the_team.snap_section {
+    height: auto !important; }
+    #contact.snap_section .bg_image, #the_team.snap_section .bg_image {
+      height: auto !important; }
+    #contact.snap_section .text_section, #the_team.snap_section .text_section {
+      height: auto !important; } }

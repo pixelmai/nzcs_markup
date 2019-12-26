@@ -25,6 +25,23 @@ jQuery(function($){
 
 		
  	});
+
+	
+	$(window).scroll(function(event) {
+      	var scroll = $(this).scrollTop();
+      	
+      	if (scroll > 300) {
+         	$("#main_navigation").addClass("menu_fadein");
+
+      	} else {
+          	$("#main_navigation").removeClass("menu_fadein");
+      	}
+		
+ 	});
+
+
+
+
 	//detect if in viewport
   	function isInViewport(el){
   		var top_of_element = $(el).offset().top;
