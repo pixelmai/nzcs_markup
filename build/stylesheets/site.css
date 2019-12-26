@@ -134,7 +134,8 @@ body {
 /* FOOTER */
 footer {
   background: #ebfdfe;
-  height: unset !important; }
+  height: unset !important;
+  padding: 0 20px 20px 20px; }
   footer .grid-container {
     border-top: 1px solid #aee3e6;
     padding: 40px 0; }
