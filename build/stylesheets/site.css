@@ -1400,27 +1400,29 @@ ul.no_list {
     margin-bottom: 20px; }
   /* ABOUT PAGE */
   /* SERVICES PAGE */
-  #services_list .text_section {
-    font-size: .9em; }
-    #services_list .text_section h1 {
-      font-size: 3.7em; }
-    #services_list .text_section h2 {
-      font-size: 1.8em;
-      margin-bottom: 10px;
-      display: block; }
-      #services_list .text_section h2 strong {
-        color: #000; }
-    #services_list .text_section h3 {
-      font-size: 2.5em; }
-    #services_list .text_section p {
-      font-size: 1.3em;
-      text-align: center;
-      display: block;
-      margin: 0 20px; }
-      #services_list .text_section p strong {
-        font-size: 1.1em; }
-    #services_list .text_section .services_row .service_item p {
-      font-size: 1.5em; }
+  #services_list {
+    margin-top: -600px; }
+    #services_list .text_section {
+      font-size: .9em; }
+      #services_list .text_section h1 {
+        font-size: 3.7em; }
+      #services_list .text_section h2 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+        display: block; }
+        #services_list .text_section h2 strong {
+          color: #000; }
+      #services_list .text_section h3 {
+        font-size: 2.5em; }
+      #services_list .text_section p {
+        font-size: 1.3em;
+        text-align: center;
+        display: block;
+        margin: 0 20px; }
+        #services_list .text_section p strong {
+          font-size: 1.1em; }
+      #services_list .text_section .services_row .service_item p {
+        font-size: 1.5em; }
   /* SERVICES PAGE */ }
 
 @media screen and (max-height: 768px) {
